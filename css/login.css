@@ -1,0 +1,107 @@
+/* Página de Login */
+
+.contenido-principal {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.contenedor-formulario {
+  max-width: 520px;
+  width: 100%;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: var(--radius);
+  padding: 48px;
+  box-shadow: var(--shadow-lg);
+}
+
+.titulo-formulario {
+  font-size: 36px;
+  margin-bottom: 8px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.subtitulo-formulario {
+  text-align: center;
+  color: var(--txt-muted);
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.etiqueta {
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+}
+
+.boton-completo {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.pie-formulario {
+  text-align: center;
+  margin-top: 24px;
+  color: var(--txt-muted);
+  font-size: 14px;
+}
+
+.pie-formulario .enlace {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.pie-formulario .enlace:hover {
+  color: var(--accent-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido-principal {
+    padding: 32px 16px;
+  }
+  
+  .contenedor-formulario {
+    padding: 32px 24px;
+  }
+  
+  .titulo-formulario {
+    font-size: 28px;
+  }
+  
+  .subtitulo-formulario {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-formulario {
+    padding: 24px 20px;
+  }
+  
+  .titulo-formulario {
+    font-size: 24px;
+  }
+  
+  .formulario {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - FundMe</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html" class="brand">FundMe</a>
+    <nav class="nav">
+      <a href="../index.html" class="nav-link">Inicio</a>
+      <a href="buscador.html" class="nav-link">Explorar</a>
+      <a href="login.html" class="nav-link">Iniciar Sesión</a>
+    </nav>
+  </header>
+
+  <main class="contenido-principal">
+    <div class="container">
+      <div class="contenedor-formulario">
+        <h1 class="titulo-formulario">Crear Cuenta</h1>
+        <p class="subtitulo-formulario">Únete a nuestra comunidad y haz realidad tus proyectos</p>
+
+        <form class="formulario" autocomplete="off">
+          <div class="grupo-formulario">
+            <label class="etiqueta" for="nombre">Nombre Completo</label>
+            <input 
+              id="nombre" 
+              type="text" 
+              class="input" 
+              placeholder="Ingresa tu nombre completo" 
+              name="nombre"
+              required
+            >
+          </div>
+
+          <div class="grupo-formulario">
+            <label class="etiqueta" for="email">Correo Electrónico</label>
+            <input 
+              id="email" 
+              type="email" 
+              class="input" 
+              placeholder="correo@ejemplo.com" 
+              name="email"
+              required
+            >
+          </div>
+
+          <div class="grupo-formulario">
+            <label class="etiqueta" for="pass">Contraseña</label>
+            <input 
+              id="pass" 
+              type="password" 
+              class="input" 
+              placeholder="Mínimo 6 caracteres" 
+              name="password"
+              minlength="6"
+              required
+            >
+          </div>
+
+          <div class="grupo-formulario">
+            <label class="etiqueta" for="pass2">Confirmar Contraseña</label>
+            <input 
+              id="pass2" 
+              type="password" 
+              class="input" 
+              placeholder="Repite tu contraseña" 
+              name="password2"
+              minlength="6"
+              required
+            >
+          </div>
+
+          <button type="submit" class="btn boton-completo">Crear Cuenta</button>
+          
+          <p class="pie-formulario">
+            ¿Ya tienes una cuenta? <a href="login.html" class="enlace">Inicia sesión</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 FundMe. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
