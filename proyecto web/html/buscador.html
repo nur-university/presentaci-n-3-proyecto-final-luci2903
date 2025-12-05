@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorar Proyectos - FundMe</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/buscador.css">
+</head>
+<body>
+  <header class="header">
+    <a href="../index.html" class="brand">FundMe</a>
+    <nav class="nav">
+      <a href="../index.html" class="nav-link">Inicio</a>
+      <a href="buscador.html" class="nav-link">Explorar</a>
+      <a href="login.html" class="nav-link">Iniciar Sesión</a>
+      <a href="registro.html" class="btn">Registrarse</a>
+    </nav>
+  </header>
+
+  <main class="contenido-principal">
+    <div class="container">
+      <h1 class="titulo-pagina">Explorar Proyectos</h1>
+
+      
+      <div class="seccion-busqueda">
+        <form class="formulario-busqueda" role="search" autocomplete="off">
+          <div class="contenedor-input-busqueda">
+            <svg class="icono lupa" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 1 0 14 15.5l.27.28v.79L20 21.5 21.5 20l-6-6zM5 10.5A5.5 5.5 0 1 1 10.5 16 5.5 5.5 0 0 1 5 10.5z"/>
+            </svg>
+            <input type="search" class="input-busqueda" placeholder="Buscar proyectos por nombre, categoría o descripción...">
+          </div>
+        </form>
+
+        <div class="filtros">
+          <button class="boton-filtro activo" data-filter="all">Todos</button>
+          <button class="boton-filtro" data-filter="innovacion">Innovación</button>
+          <button class="boton-filtro" data-filter="arte">Arte y Cultura</button>
+          <button class="boton-filtro" data-filter="medioambiente">Medio Ambiente</button>
+          <button class="boton-filtro" data-filter="social">Social</button>
+          <button class="boton-filtro" data-filter="entretenimiento">Entretenimiento</button>
+          <button class="boton-filtro" data-filter="salud">Salud</button>
+        </div>
+      </div>
+
+      <section class="grid-proyectos">
+        <article class="tarjeta-proyecto">
+          <div class="imagen-proyecto">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Energía Solar para Comunidades Rurales">
+            <div class="superposicion-proyecto">
+              <div class="progreso-proyecto">
+                <div class="barra-progreso">
+                  <div class="relleno-progreso" style="width: 75%"></div>
+                </div>
+                <span class="texto-progreso">75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-proyecto">
+            <h3 class="titulo-proyecto">Energía Solar para Comunidades Rurales</h3>
+            <p class="meta-proyecto">
+              <span>Meta: $50,000</span>
+              <span>Finaliza: 15 días</span>
+            </p>
+            <p class="autor-proyecto">Por: María González</p>
+            <a href="detalle.html" class="enlace-proyecto">Ver Detalles</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="imagen-proyecto">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="Biblioteca Digital para Escuelas">
+            <div class="superposicion-proyecto">
+              <div class="progreso-proyecto">
+                <div class="barra-progreso">
+                  <div class="relleno-progreso" style="width: 45%"></div>
+                </div>
+                <span class="texto-progreso">45%</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-proyecto">
+            <h3 class="titulo-proyecto">Biblioteca Digital para Escuelas</h3>
+            <p class="meta-proyecto">
+              <span>Meta: $30,000</span>
+              <span>Finaliza: 30 días</span>
+            </p>
+            <p class="autor-proyecto">Por: Carlos Ramírez</p>
+            <a href="detalle.html" class="enlace-proyecto">Ver Detalles</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="imagen-proyecto">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="App de Gestión para Pequeñas Empresas">
+            <div class="superposicion-proyecto">
+              <div class="progreso-proyecto">
+                <div class="barra-progreso">
+                  <div class="relleno-progreso" style="width: 90%"></div>
+                </div>
+                <span class="texto-progreso">90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-proyecto">
+            <h3 class="titulo-proyecto">App de Gestión para Pequeñas Empresas</h3>
+            <p class="meta-proyecto">
+              <span>Meta: $25,000</span>
+              <span>Finaliza: 5 días</span>
+            </p>
+            <p class="autor-proyecto">Por: Ana Martínez</p>
+            <a href="detalle.html" class="enlace-proyecto">Ver Detalles</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="imagen-proyecto">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Plataforma de Educación Online">
+            <div class="superposicion-proyecto">
+              <div class="progreso-proyecto">
+                <div class="barra-progreso">
+                  <div class="relleno-progreso" style="width: 60%"></div>
+                </div>
+                <span class="texto-progreso">60%</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-proyecto">
+            <h3 class="titulo-proyecto">Plataforma de Educación Online</h3>
+            <p class="meta-proyecto">
+              <span>Meta: $40,000</span>
+              <span>Finaliza: 20 días</span>
+            </p>
+            <p class="autor-proyecto">Por: Luis Fernández</p>
+            <a href="detalle.html" class="enlace-proyecto">Ver Detalles</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="imagen-proyecto">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop" alt="Reforestación Urbana">
+            <div class="superposicion-proyecto">
+              <div class="progreso-proyecto">
+                <div class="barra-progreso">
+                  <div class="relleno-progreso" style="width: 35%"></div>
+                </div>
+                <span class="texto-progreso">35%</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-proyecto">
+            <h3 class="titulo-proyecto">Reforestación Urbana</h3>
+            <p class="meta-proyecto">
+              <span>Meta: $35,000</span>
+              <span>Finaliza: 45 días</span>
+            </p>
+            <p class="autor-proyecto">Por: Sofía Morales</p>
+            <a href="detalle.html" class="enlace-proyecto">Ver Detalles</a>
+          </div>
+        </article>
+
+        <article class="tarjeta-proyecto">
+          <div class="imagen-proyecto">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop" alt="Centro de Salud Comunitario">
+            <div class="superposicion-proyecto">
+              <div class="progreso-proyecto">
+                <div class="barra-progreso">
+                  <div class="relleno-progreso" style="width: 80%"></div>
+                </div>
+                <span class="texto-progreso">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="info-proyecto">
+            <h3 class="titulo-proyecto">Centro de Salud Comunitario</h3>
+            <p class="meta-proyecto">
+              <span>Meta: $60,000</span>
+              <span>Finaliza: 10 días</span>
+            </p>
+            <p class="autor-proyecto">Por: Roberto Silva</p>
+            <a href="detalle.html" class="enlace-proyecto">Ver Detalles</a>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 FundMe. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

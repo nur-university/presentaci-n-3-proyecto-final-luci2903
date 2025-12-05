@@ -1,0 +1,266 @@
+/* Página de Exploración de Proyectos */
+
+.contenido-principal {
+  min-height: calc(100vh - 200px);
+  padding: 40px 0;
+}
+
+.titulo-pagina {
+  font-size: 36px;
+  margin-bottom: 32px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Sección de búsqueda */
+.seccion-busqueda {
+  margin-bottom: 48px;
+}
+
+.formulario-busqueda {
+  margin-bottom: 24px;
+}
+
+.contenedor-input-busqueda {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contenedor-input-busqueda .icono {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  fill: var(--txt-muted);
+  pointer-events: none;
+}
+
+.input-busqueda {
+  width: 100%;
+  height: 56px;
+  padding-left: 56px;
+  padding-right: 18px;
+  border: 3px solid var(--accent);
+  border-radius: var(--radius);
+  font-size: 16px;
+  background: #fff;
+}
+
+.input-busqueda:focus {
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--ring), transparent 70%);
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.boton-filtro {
+  padding: 10px 20px;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.boton-filtro:hover {
+  background: var(--accent);
+  color: #000;
+}
+
+.boton-filtro.activo {
+  background: var(--accent);
+  color: #000;
+  border-color: #000;
+}
+
+/* Grid de proyectos */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.tarjeta-proyecto {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-proyecto:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.imagen-proyecto {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.imagen-proyecto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.superposicion-proyecto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  padding: 16px;
+}
+
+.progreso-proyecto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.barra-progreso {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.relleno-progreso {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.texto-progreso {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  min-width: 40px;
+}
+
+.info-proyecto {
+  padding: 24px;
+}
+
+.titulo-proyecto {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.meta-proyecto {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: var(--txt-muted);
+  flex-wrap: wrap;
+}
+
+.autor-proyecto {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--txt-muted);
+}
+
+.enlace-proyecto {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.enlace-proyecto:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid-proyectos {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenido-principal {
+    padding: 32px 0;
+  }
+  
+  .titulo-pagina {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  
+  .seccion-busqueda {
+    margin-bottom: 32px;
+  }
+  
+  .contenedor-input-busqueda {
+    max-width: 100%;
+  }
+  
+  .filtros {
+    gap: 8px;
+  }
+  
+  .boton-filtro {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .grid-proyectos {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .imagen-proyecto {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-pagina {
+    font-size: 24px;
+  }
+  
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .imagen-proyecto {
+    height: 180px;
+  }
+  
+  .filtros {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+  
+  .boton-filtro {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+

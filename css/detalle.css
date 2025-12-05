@@ -1,0 +1,305 @@
+/* Página de Detalle del Proyecto */
+
+.contenido-principal {
+  min-height: calc(100vh - 200px);
+  padding: 0;
+}
+
+/* Imagen Hero */
+.hero-proyecto {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.imagen-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Layout principal */
+.layout-proyecto {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 48px;
+  padding: 0 24px 48px;
+}
+
+.principal-proyecto {
+  min-width: 0;
+}
+
+.titulo-proyecto {
+  font-size: 42px;
+  margin-bottom: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+/* Información del creador */
+.info-creador {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-light);
+  border: 2px solid #000;
+  border-radius: var(--radius);
+  margin-bottom: 32px;
+}
+
+.avatar-creador {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 20px;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.etiqueta-creador {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--txt-muted);
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+.nombre-creador {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Descripción */
+.descripcion-proyecto {
+  margin-bottom: 48px;
+}
+
+.encabezado-seccion {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.contenido-descripcion {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--txt);
+}
+
+.contenido-descripcion h3 {
+  font-size: 22px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.contenido-descripcion ul {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.contenido-descripcion li {
+  margin-bottom: 8px;
+}
+
+/* Barra lateral */
+.barra-lateral-proyecto {
+  position: sticky;
+  top: 24px;
+  height: fit-content;
+}
+
+/* Estadísticas de financiación */
+.estadisticas-financiacion {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.item-estadistica {
+  margin-bottom: 20px;
+}
+
+.item-estadistica:last-of-type {
+  margin-bottom: 0;
+}
+
+.valor-estadistica {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.etiqueta-estadistica {
+  font-size: 14px;
+  color: var(--txt-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contenedor-progreso {
+  margin: 24px 0;
+}
+
+.barra-progreso-grande {
+  width: 100%;
+  height: 12px;
+  background: var(--bg-light);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.relleno-progreso-grande {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.porcentaje-progreso {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Acciones */
+.acciones-proyecto {
+  margin-bottom: 24px;
+}
+
+.boton-completo {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.boton-completo:last-child {
+  margin-bottom: 0;
+}
+
+/* Top aportantes */
+.principales-aportantes {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.titulo-aportantes {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.lista-aportantes {
+  list-style: none;
+}
+
+.item-aportante {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--bg-light);
+}
+
+.item-aportante:last-child {
+  border-bottom: none;
+}
+
+.nombre-aportante {
+  font-weight: 600;
+}
+
+.monto-aportante {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .layout-proyecto {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .barra-lateral-proyecto {
+    position: static;
+  }
+  
+  .hero-proyecto {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-proyecto {
+    height: 250px;
+    margin-bottom: 24px;
+  }
+  
+  .layout-proyecto {
+    padding: 0 16px 32px;
+    gap: 24px;
+  }
+  
+  .titulo-proyecto {
+    font-size: 32px;
+  }
+  
+  .encabezado-seccion {
+    font-size: 24px;
+  }
+  
+  .contenido-descripcion {
+    font-size: 15px;
+  }
+  
+  .contenido-descripcion h3 {
+    font-size: 20px;
+  }
+  
+  .valor-estadistica {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-proyecto {
+    height: 200px;
+  }
+  
+  .titulo-proyecto {
+    font-size: 24px;
+  }
+  
+  .info-creador {
+    padding: 16px;
+  }
+  
+  .avatar-creador {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+  
+  .estadisticas-financiacion,
+  .principales-aportantes {
+    padding: 20px;
+  }
+  
+  .valor-estadistica {
+    font-size: 24px;
+  }
+}
+
